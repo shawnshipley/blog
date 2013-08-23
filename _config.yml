@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 paginate: 5
 paginate_path: /item/page/:num
+exclude: [s3_website.yml, README.md]
