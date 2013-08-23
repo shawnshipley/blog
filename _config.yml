@@ -6,7 +6,8 @@ pygments: true
 
 paginate: 5
 paginate_path: /post/page/:num
+permalink: /post/:title
 
-exclude: [s3_website.yml, README.md]
+exclude: [s3_website.yml, README.md, TODO.md]
 
 timezone: America/New_York

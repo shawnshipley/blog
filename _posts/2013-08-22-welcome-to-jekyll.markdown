@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bootstrap-post
 title:  "Welcome to Jekyll!"
 date:   2013-08-22 19:40:29
 categories: jekyll update
