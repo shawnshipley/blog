@@ -10,3 +10,10 @@ title: Home
   <br/>
   If you're looking for anything I've written, you can find my previous <a href="/posts">posts here</a>.</br>
 </p>
+
+<p>Recent Posts</p>
+<ul class="posts">
+  {% for post in site.posts limit:5 %}
+    <li><span>{{ post.date | date_to_string }}</span> | <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
