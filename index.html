@@ -6,14 +6,7 @@ title: Home
   My name is Shawn Shipley.<br/>
   I'm a Network Engineer at Chambliss, Bahner &amp; Stophel.<br/>
   <br/>
-  You can view my <a href="/cv">resume</a> or view the <a href="/about">TL;DR version.</a><br/>
+  You can view my <a href="/cv">resume</a> or just the <a href="/about">tl;dr</a> version.<br/>
   <br/>
   If you're looking for anything I've written, you can find my previous <a href="/posts">posts here</a>.</br>
 </p>
-
-<p>Recent Posts</p>
-<ul class="posts">
-  {% for post in site.posts limit:5 %}
-    <li><span>{{ post.date | date_to_string }}</span> | <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
