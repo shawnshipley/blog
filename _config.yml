@@ -4,9 +4,9 @@ markdown: redcarpet
 
 pygments: true
 
-paginate: 5
-paginate_path: /posts/page/:num
-permalink: /post/:title
+paginate: 20
+paginate_path: /page/:num
+permalink: /:title
 
 exclude: [s3_website.yml, README.md, TODO.md]
 
