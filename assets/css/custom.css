@@ -2,9 +2,25 @@
 Custom CSS overrides specific to this blog
 */
 
+body {
+  font-family: Serif;
+  font-size: 1.75em;
+}
+
+.navbar {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+
 span.post-separator hr {
   margin-top: 3px;
   margin-bottom: 3px;
+  border-top: 1px solid #ccc;
+}
+
+hr {
   border-top: 1px solid #ccc;
 }
 
@@ -24,4 +40,18 @@ border: 1px solid;
 .extra-information {
 text-align: center;
 border: 1px solid;
+}
+
+p.about-short-description {
+font-size: 2em;
+text-align: left;
+}
+
+.about-links {
+padding: 0 3em;
+}
+
+#footer {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: .8em;
 }
