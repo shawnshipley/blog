@@ -7,7 +7,7 @@ title: Posts
     <span class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></span><br/>
     <span class="post-separator"><hr/></span>
     <span class="post-date">{{ post.date | date_to_long_string }}</span><br/>
-    <span class="post-excerpt">{{ post.excerpt | markdownify }}</span><br/>
+    <span class="post-excerpt">{{ post.excerpt | markdownify }}</span>
     <span class="post-readmore"><a href="{{ post.url }}">Read More...</a></span>
   {% endfor %}
 </div>
