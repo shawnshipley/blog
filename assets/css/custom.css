@@ -3,7 +3,7 @@ Custom CSS overrides specific to this blog
 */
 
 body {
-  font-family: Serif;
+  font-family: Lora, serif;
   font-size: 1.75em;
 }
 
@@ -11,6 +11,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .8em;
 /*  font-weight: bold; */
+}
+
+.navbar-default {
+border-color: #9B9FFF;
 }
 
 span.post-separator hr {
@@ -81,4 +85,15 @@ float: left;
 
 .resume {
   font-size: 12pt;
+}
+
+code {
+color: #00FF14;
+background-color: #000;
+border-radius: 1px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+border: 1px solid #9B9FFF;
 }
