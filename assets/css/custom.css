@@ -52,9 +52,9 @@ border: 1px solid;
 
 p.about-short-description {
 font-size: 2em;
-text-align: center;
+text-align: left;
 line-height: 1.3em;
-padding-left: 0px;
+margin-left: 5em;
 }
 
 .about-links {
