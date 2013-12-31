@@ -1,48 +1,38 @@
 ---
 layout: page
-title: Posts
+title: About
 ---
-<div>
-  {% for post in paginator.posts %}
-    <span class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></span><br/>
-    <span class="post-separator"><hr/></span>
-    <span class="post-date">{{ post.date | date_to_long_string }}</span><br/>
-    <span class="post-excerpt">{{ post.excerpt | markdownify }}</span>
-    <span class="post-readmore"><a href="{{ post.url }}">Read More...</a></span>
-  {% endfor %}
+<img class="avatar" src="/assets/images/avatar_128.gif"/>
+<p class="about-short-description">
+  My name is Shawn Shipley<br/>
+  I'm a Network Engineer<br/>
+  living in Ooltewah, TN.<br/>
+</p>
+<hr/>
+<p>
+  <strong>About me...</strong>
+</p>
+<div class="about-links">
+  <p>
+    - Remember me from somewhere? Need to get in touch? You can send me an email at <a href="mailto:shawn.shipley@gamil.com">shawn.shipley@gmail.com</a>
+  </p>
+  <p>
+    - You can see my <a href="http://flickr.com/photos/shawnshipley">Flickr Photostream</a> if you're interested.<br/>
+  </p>
+  <p>
+    - I completed my LPIC-1 certification. You can <a href="https://cs.lpi.org/caf/Xamman/certification">verify</a> for yourself. You just need my LPI ID (LPI000219626) and my Verification Code (pbgsaag2g8).
+  </p>
+  <p>
+    - <a href="https://twitter.com/shawnshipley">I'm on Twitter</a>, but I don't tweet. I mainly follow some tech people to keep up on current trends.
+  </p>
+  <p>
+    - Technically I have a <a href="https://profiles.google.com/shawn.shipley/about">Google Profile</a> but you won't find much there yet.
+  </p>
+  <p>
+    - I have a small <a href="https://github.com/shawnshipley">GitHub Repo</a>. Nothing major, just a place to keep a backup of my scripts and this blog. Feel free to clone this blog as a starting point for your own Jekyll powered blog.
+  </p>
+  <p>
+    - If you want to read a little more about my work history, you can check out my <a href="/cv">resume</a>.
+  </p>
 </div>
-
-<div id="post-pagination" class="pagination">
-<ul class="pagination">
-  {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <li><a href="/">Prev</a></li>
-      {% else %}
-        <li><a href="{{ paginator.previous_page_path }}">Prev</a></li>
-      {% endif %}
-  {% else %}
-      <li><span>Prev</span></li>
-  {% endif %}
-
-      {% if paginator.page == 1 %}
-        <li><span class="current-page">1</span></li>
-      {% else %}
-        <li><a href="/">1</a></li>
-      {% endif %}
-
-    {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-          <li><span class="current-page">{{ count }}</span></li>
-        {% else %}
-          <li><a href="/page/{{ count }}">{{ count }}</a></li>
-        {% endif %}
-    {% endfor %}
-
-  {% if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path }}">Next</a></li>
-  {% else %}
-      <li><span>Next</span></li>
-  {% endif %}
-</ul>
-</div>
-
+<hr/>

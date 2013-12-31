@@ -1,11 +1,11 @@
-name: Shply.net
+name: ShawnShipley.net
 
 markdown: redcarpet
 
 pygments: true
 
 paginate: 20
-paginate_path: /page/:num
+paginate_path: /posts/:num
 permalink: /:title
 
 exclude: [s3_website.yml, README.md, TODO.md]
